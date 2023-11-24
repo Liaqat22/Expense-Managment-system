@@ -1,0 +1,235 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani:wght@300&display=swap');
+  /* font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rajdhani', sans-serif; */
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+body {
+  background: rgb(231 204 228 / 25%);
+  /* color: white; */
+  font-family: 'Poppins', sans-serif;
+     /* font-family: 'Montserrat', sans-serif; */
+
+}
+html{
+  font-size: 63%;
+}
+/* ========HOME========== */
+.navbar{
+  color: white;
+}
+.navbar-brand ,.footerText{
+  font-size: 3rem;
+}
+.textHeading {
+  font-size: 2.4rem;
+}
+h6{
+  font-size: 1.7rem;
+}
+
+.active{
+  border-bottom: 2px solid rgb(255, 0, 149);
+}
+.containerfluidnav{
+  padding: .7rem 2rem;
+}
+.container{
+  padding: 2rem 2rem;
+}
+
+.filterRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-bottom: .1rem solid gray;
+
+}
+.analyticRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.filterDiv{
+  width: auto;
+}
+.tablegraphIconsColum{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.activeIcon{
+  color: rgb(24, 24, 25);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.inactiveIcon{
+  color: rgb(133, 132, 133);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.fa-trash-can , .fa-pen{
+  font-size: 2rem;
+}
+.fa-pen{
+  color: #958302;
+}
+.fa-trash-can{
+  color: rgb(160, 12, 12);
+}
+/* =================== buttons ================================== */
+.addmoreBtn{
+  width: 100%;
+  padding: .5rem 1rem;
+ font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+}
+.addtransbtn{
+  padding: 0.5rem 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+/* ================ table ======================================= */
+.tableColum{
+padding: 1rem 0rem;
+}
+.table{
+  text-align: center;
+  
+}
+
+.tdHome , .thHome{
+  padding: 0.3rem;
+}
+.thHome{
+  font-weight: 800;
+  color: grey;
+}
+.card{
+  padding: 1rem;
+  border: none;
+}
+.categorypercent{
+  margin: 0.5rem 0rem;
+  border: 1px solid gainsboro;
+  padding: 0.5rem 1rem;
+  border-radius: 1.1rem;
+}
+
+.transForm{
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 2rem;
+    box-shadow: 0px 3px 5px 1px gray;
+
+}
+.spiner{
+  text-align: center;
+    margin-top: 2rem;
+}
+.navbar-toggler{
+  background-color: white;
+}
+@media screen and  (min-width:300px) and (max-width:430px) {
+  html {
+    font-size: 41.5%;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .table {
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .frequencyfilter{
+    width: 48%;
+  }
+  .typefilter{
+    width: 40%;
+  }
+  
+}
+@media screen and  (min-width:430px) and (max-width:575px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .table {
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .frequencyfilter{
+    width: 48%;
+  }
+  .typefilter{
+    width: 40%;
+  }
+  
+}
+@media screen and (min-width:574px) and (max-width:767px) {
+  html {
+    font-size: 55.5%;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .table {
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .frequencyfilter{
+    width: 48%;
+  }
+  .typefilter{
+    width: 40%;
+  }
+ 
+}
+
+@media screen and (min-width:765px) and (max-width:990px) {
+  html {
+    font-size: 55.5%;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+ h6{
+  text-wrap: nowrap;
+ }
+  
+  
+}
+
+
+  @media screen and (min-width:1600px) and (max-width:2560px) {
+    .layout{
+      width: 1600px;
+      margin: 0 auto;
+    }
+  }
