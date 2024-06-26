@@ -6,7 +6,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import authRoute from './routes/authRoute.js';
 import transactionRoutes from './routes/transactionRoutes.js';
-import path from 'path';
+// import path from 'path';
 
 const app = express();
 dotenv.config();
@@ -19,13 +19,13 @@ app.use(cors());
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/transation', transactionRoutes);
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
+// const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
-app.use(express.static(path.join(__dirname, './client/build')));
+// app.use(express.static(path.join(__dirname, './client/build')));
 
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, './client/build/index.html'));
-});
+// app.get('*', function(req, res) {
+//   res.sendFile(path.join(__dirname, './client/build/index.html'));
+// });
 
 app.use('/hello', (req, res) => {
   try {
